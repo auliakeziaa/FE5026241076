@@ -1,0 +1,188 @@
+<html>
+
+<head>
+    <title>Pilih Paket Streaming Anda</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet" />
+
+    <style>
+        body {
+            background-color: #f0f0f0;
+        }
+
+        .header h1 {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: #333;
+            text-transform: uppercase;
+        }
+
+        .header {
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 1.5rem;
+        }
+
+        .header p {
+            color: #6c757d;
+            margin-top: 0.5rem;
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 800px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 32px;
+        }
+
+        .card {
+            flex: 1;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            border-radius: 0;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 3rem 1.2rem;
+            text-align: center;
+        }
+
+        .plan-name {
+            font-family: 'Oswald', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: #333;
+            margin-bottom: 0.25rem;
+        }
+
+        .plan-price {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 1.5rem;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            padding: 12px 0;
+            font-family: sans-serif;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 1.5rem;
+            border-radius: 0;
+        }
+
+        .button-current {
+            background-color: #aaa;
+            color: #fff;
+            cursor: default;
+        }
+
+        .button-upgrade {
+            background-color: #e05555;
+            color: #fff;
+        }
+
+        .button-upgrade:hover {
+            background-color: #c94343;
+        }
+
+        .feature-item {
+            font-size: 13px;
+            color: #555;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-item-last {
+            margin-bottom: 0;
+        }
+
+        .feature-bold {
+            color: #333;
+            font-weight: bold;
+        }
+
+        .header h1 {
+            font-size: 36px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1>Pilih Paket Streaming Anda</h1>
+        <p>Nikmati ribuan film, serial, dan tayangan eksklusif tanpa batas. Pilih paket yang paling sesuai untuk Anda.
+        </p>
+    </div>
+
+    <div class="container">
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-body">
+                    <p class="plan-name">Basic</p>
+                    <p class="plan-price">Rp54.000/Bulan</p>
+                    <button class="button button-current" disabled>Your Plan</button>
+
+                    <p class="feature-item"><span class="feature-bold">1</span> akun pengguna</p>
+                    <p class="feature-item"><span class="feature-bold">Unlimited</span> streaming film & series</p>
+                    <p class="feature-item"><span class="feature-bold">HD</span> video quality</p>
+                    <p class="feature-item"><span class="feature-bold">2</span> perangkat sekaligus</p>
+                    <p class="feature-item feature-item-last"><span class="feature-bold">Download</span> film untuk
+                        ditonton offline</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <p class="plan-name">Standard</p>
+                    <p class="plan-price">Rp120.000/Bulan</p>
+                    <button class="button button-upgrade">Upgrade</button>
+
+                    <p class="feature-item"><span class="feature-bold">2</span> akun pengguna</p>
+                    <p class="feature-item"><span class="feature-bold">Unlimited</span> streaming film & series</p>
+                    <p class="feature-item"><span class="feature-bold">Full HD</span> video quality</p>
+                    <p class="feature-item"><span class="feature-bold">4</span> perangkat sekaligus</p>
+                    <p class="feature-item feature-item-last"><span class="feature-bold">Download</span> hingga 30 judul
+                        film</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <p class="plan-name">Premium</p>
+                    <p class="plan-price">Rp186.000/Bulan</p>
+                    <button class="button button-upgrade">Upgrade</button>
+
+                    <p class="feature-item"><span class="feature-bold">4</span> akun pengguna</p>
+                    <p class="feature-item"><span class="feature-bold">Unlimited</span> streaming film & series</p>
+                    <p class="feature-item"><span class="feature-bold">Ultra HD 4K</span> video quality</p>
+                    <p class="feature-item"><span class="feature-bold">6</span> perangkat sekaligus</p>
+                    <p class="feature-item feature-item-last"><span class="feature-bold">Unlimited</span> download film
+                        offline</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
